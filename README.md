@@ -1,2 +1,2 @@
-# nats-web-staging
-Nats web app staging
+# NATS-template
+NATS NATS template
