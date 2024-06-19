@@ -324,6 +324,71 @@ body {
 }
 
 /*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+
+.custom-container {
+  padding-left: 60px; /* Adjust the value as needed */
+}
+
+.contact_section {
+  padding-top: 25px !important; /* Use !important to ensure this style is applied */
+  margin-top: 25px !important; /* Ensure no margin is added on top */
+}
+
+.contact_section .left-column {
+  padding-top: 25px !important; /* Adjust the value as needed */
+  margin-top: 0 !important; /* Ensure no extra margin is added */
+}
+
+.contact_section .form_container {
+  margin-top: 0; /* Ensure there's no extra margin */
+}
+
+.contact_section .info-box {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact_section .info-box .address, 
+.contact_section .info-box .email, 
+.contact_section .info-box .phone, 
+.contact_section .info-box .github, 
+.contact_section .info-box .linkedin, 
+.contact_section .info-box .website {
+  margin-bottom: 35px;
+}
+
+.contact_section .info-box i {
+  font-size: 24px;
+  color: #149ddd;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #eaf2fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.contact_section .info-box h4 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact_section .info-box p {
+  font-size: 15px;
+  margin-bottom: 0;
+  color: #555;
+}
+
+/*--------------------------------------------------------------
 # Pagination
 --------------------------------------------------------------*/
 

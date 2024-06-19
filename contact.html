@@ -30,6 +30,16 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+    <!-- Added New -->
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  
+    <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body class="sub_page">
@@ -103,55 +113,94 @@
     <!-- end header section -->
   </div>
 
-  <!-- contact section -->
-  <section class="contact_section layout_padding">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 px-0">
-          <div class="img-box">
-            <img src="images/contact-img.jpg" class="box_img" alt="Contact Image">
+<!-- contact section -->
+<section class="contact_section layout_padding">
+  <div class="container-fluid custom-container">
+    <div class="row">
+      <div class="col-md-5 px-0 left-column">
+        <div class="info-box">
+          <div class="address">
+            <i class="bi bi-geo-alt"></i>
+            <h4>Location:</h4>
+            <p>NYC, United States</p>
           </div>
-        </div>
-        <div class="col-md-5 mx-auto">
-          <div class="form_container">
-            <div class="heading_container heading_center">
-              <h2>Get In Touch</h2>
-            </div>
-            <form id="contactForm" action="https://contact-us-63d8ec101a78.herokuapp.com/contact-fint.php" method="post">
-              <div class="form-row">
-                <div class="form-group col">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required />
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col">
-                  <label for="email">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required />
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col">
-                  <label for="subject">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject" required />
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col">
-                  <label for="message">Message</label>
-                  <textarea class="message-box form-control" name="message" rows="10" id="message" required></textarea>
-                </div>
-              </div>
-              <div class="btn_box">
-                <button type="submit">SEND</button>
-              </div>
-            </form>
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Email:</h4>
+            <p>enquiry@nats.com</p>
+          </div>
+
+          <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>Tel:</h4>
+            <p>+123456789</p>
+          </div>
+
+          <div class="phone">
+            <i class="bi bi-printer"></i>
+            <h4>Fax:</h4>
+            <p>+123456789</p>
+          </div>
+
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/abuelgasim" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <h4>LinkedIn:</h4>
+            <p>North American Trade Source (NATS)</p>
+          </div>
+
+          <div class="website">
+            <a href="https://abuelgasim.tech" target="_blank">
+              <i class="bi bi-globe"></i>
+            </a>
+            <h4>Website:</h4>
+            <p>natradesource.com</p>
           </div>
         </div>
       </div>
+      <div class="col-md-6 mx-auto">
+        <div class="form_container">
+          <div class="heading_container heading_center">
+            <h2>Get In Touch</h2>
+          </div>
+          <form id="contactForm" action="https://contact-us-63d8ec101a78.herokuapp.com/contact-fint.php" method="post">
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" class="form-control" id="name" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="email">Your Email</label>
+                <input type="email" class="form-control" name="email" id="email" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="message">Message</label>
+                <textarea class="message-box form-control" name="message" rows="10" id="message" required></textarea>
+              </div>
+            </div>
+            <div class="btn_box">
+              <button type="submit">SEND</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-  </section>
-  <!-- end contact section -->
+  </div>
+</section>
+<!-- end contact section -->
+
 
   <div id="popupMessage" style="display:none;">
     <p id="popupText"></p>
@@ -288,6 +337,15 @@
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
+
+  <!-- Added New -->
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
