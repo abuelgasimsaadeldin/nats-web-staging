@@ -203,7 +203,7 @@ body {
 
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# Portfolio Details (Specific product details)
 --------------------------------------------------------------*/
 #portfolio-details {
   padding-top: 65px;
@@ -392,7 +392,24 @@ body {
 # Pagination
 --------------------------------------------------------------*/
 
+.pagination-controls {
+  text-align: center;
+  margin-top: 20px;
+}
 
+.pagination-controls button {
+  background: #149ddd;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pagination-controls button:hover {
+  background: #0056b3;
+}
 
 /* ------------------------------------------------------------ */
 
