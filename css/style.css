@@ -393,6 +393,29 @@ body {
   margin-bottom: 0px;
 }
 
+/* Responsive styling for mobile view */
+@media (max-width: 768px) {
+  .contact_section .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact_section .left-column, 
+  .contact_section .form_container {
+    width: 100%; /* Ensure full width for columns on mobile */
+    padding: 20px; /* Add some padding for better spacing */
+  }
+
+  .contact_section .info-box {
+    padding: 20px; /* Adjust padding for mobile */
+  }
+
+  .contact_section .form_container .btn_box button {
+    width: auto; /* Ensure button doesn't stretch too much on mobile */
+  }
+}
+
 /*--------------------------------------------------------------
 # Pagination
 --------------------------------------------------------------*/
