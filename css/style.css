@@ -430,17 +430,24 @@ body {
 }
 
 .pagination-controls button {
-  background: #149ddd;
-  color: white;
+  background: white;
+  color: #149ddd;
+  /* border: 1px solid #149ddd; */
   border: none;
   padding: 10px 15px;
   margin: 0 5px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s, color 0.3s;
 }
 
 .pagination-controls button:hover {
   background: #0056b3;
+  color: white;
+}
+
+.pagination-controls button.active {
+  background: #149ddd;
+  color: white;
 }
 
 /* ------------------------------------------------------------ */
