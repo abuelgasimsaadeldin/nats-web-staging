@@ -395,6 +395,10 @@ body {
 
 /* Responsive styling for mobile view */
 @media (max-width: 768px) {
+  .custom-container {
+    padding-left: 10px; /* Adjust padding-left for mobile view */
+  }
+  
   .contact_section .row {
     display: flex;
     flex-direction: column;
