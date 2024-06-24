@@ -328,12 +328,12 @@ body {
 --------------------------------------------------------------*/
 
 .custom-container {
-  padding-left: 60px; /* Adjust the value as needed */
+  padding-left: 50px; /* Adjust the value as needed */
 }
 
 .contact_section {
-  padding-top: 25px !important; /* Use !important to ensure this style is applied */
-  margin-top: 25px !important; /* Ensure no margin is added on top */
+  padding-top: 35px !important; /* Use !important to ensure this style is applied */
+  margin-top: 35px !important; /* Ensure no margin is added on top */
 }
 
 .contact_section .left-column {
@@ -386,6 +386,11 @@ body {
   font-size: 15px;
   margin-bottom: 0;
   color: #555;
+}
+
+.heading_container.heading_center h2 {
+  text-align: center;
+  margin-bottom: 0px;
 }
 
 /*--------------------------------------------------------------
@@ -1116,7 +1121,7 @@ a:focus {
 }
 
 .contact_section .heading_container {
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 
 .contact_section .row {
