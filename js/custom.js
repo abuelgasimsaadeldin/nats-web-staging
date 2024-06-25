@@ -131,7 +131,7 @@ function createPaginationControls() {
       if (i > 1) {
         setTimeout(() => {
           showItems(currentPage);
-        }, 450); // Adjust timeout as necessary
+        }, 420); // Adjust timeout as necessary
       }
     });
     paginationContainer.appendChild(pageButton);
