@@ -126,7 +126,7 @@ function createPaginationControls() {
       currentPage = i;
       showItems(currentPage);
       updatePaginationControls();
-      // window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       // Automatically simulate a second click for pages greater than 1
       if (i > 1) {
         setTimeout(() => {
