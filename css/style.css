@@ -41,13 +41,21 @@ body {
 } */
 
 /* ------------------ Product images ----------------------- */
-.product-img {
+/* .product-img {
   width: 42%;
   max-width: 200px;
   height: 50%;
   max-height: 150px;
   display: block;
   margin: 0 auto 40px;
+} */
+
+.product-img {
+  width: 200px;
+  height: 80px;
+  display: block;
+  margin: 0 auto 40px;
+  /* object-fit: cover; */
 }
 
 /* Container for each product */
