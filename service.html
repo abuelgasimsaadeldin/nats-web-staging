@@ -1,518 +1,691 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon" />
+    <title>NATS</title>
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
-  <title>NATS</title>
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--owl slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- nice select -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+      integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4="
+      crossorigin="anonymous"
+    />
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <!-- nice select -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+  </head>
 
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-</head>
-
-<body class="sub_page">
-  <div class="hero_area">
-    <div class="hero_bg_box">
-      <img src="images/hero-bg.jpg" alt="">
-    </div>
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="header_top">
-        <div class="container-fluid header_top_container">
-
-          <div class="contact_nav">
-            <!-- <a href="">
+  <body class="sub_page">
+    <div class="hero_area">
+      <div class="hero_bg_box">
+        <img src="images/hero-bg.jpg" alt="" />
+      </div>
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="header_top">
+          <div class="container-fluid header_top_container">
+            <div class="contact_nav">
+              <!-- <a href="">
               <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 10px;"></i>
               <span>
                 NYC, United States
               </span>
             </a> -->
-            <a href="https://api.whatsapp.com/send/?phone=60137196728&text&type=phone_number&app_absent=0" target="_blank">
-              <i class="fa fa-whatsapp" aria-hidden="true" style="margin-right: 10px;"></i>
-              <span>
-                Call : +123456789
-              </span>
-            </a>
-            <a href="contact.html" target="_blank">
-              <i class="fa fa-envelope" aria-hidden="true" style="margin-right: 10px;"></i>
-              <span>
-                enquiry@nats.com
-              </span>
-            </a>
+              <a
+                href="https://api.whatsapp.com/send/?phone=60137196728&text&type=phone_number&app_absent=0"
+                target="_blank"
+              >
+                <i
+                  class="fa fa-whatsapp"
+                  aria-hidden="true"
+                  style="margin-right: 10px"
+                ></i>
+                <span> Call : +123456789 </span>
+              </a>
+              <a href="contact.html" target="_blank">
+                <i
+                  class="fa fa-envelope"
+                  aria-hidden="true"
+                  style="margin-right: 10px"
+                ></i>
+                <span> enquiry@nats.com </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header_bottom">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+              <!-- <div class="navbar-brand" href="index.html"> NATS </div> -->
+              <a class="navbar-brand" href="index.html">
+                <img
+                  src="images/nats-logo.png"
+                  alt="NATS Logo"
+                  style="height: 50px"
+                />
+              </a>
+
+              <!-- Hamburger icon -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class=""> </span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html"
+                      >Home <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html"> About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="service.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="team.html"> Team </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
+
+    <!-- product section -->
+
+    <section class="service_section layout_padding">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2 class="">Our Brands</h2>
+          <p class="col-lg-8 px-0">
+            Select from our major brands to explore products
+          </p>
+        </div>
+        <div class="service_container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="brands/masoneilan_toshi.html">
+                  <img
+                    src="images/brands/masoneilan-alone.png"
+                    alt="Masoneilan"
+                    class="product-img"
+                  />
+                  <h3>Masoneilan</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="numatics.html">
+                  <img
+                    src="images/brands/Fisher.png"
+                    alt="Fisher"
+                    class="product-img"
+                  />
+                  <h3>Fisher</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="cosmic.html">
+                  <img
+                    src="images/brands/Bettis.png"
+                    alt="Bettis"
+                    class="product-img"
+                  />
+                  <h3>Bettis</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="enidine.html">
+                  <img
+                    src="images/brands/Bray.png"
+                    alt="Bray"
+                    class="product-img"
+                  />
+                  <h3>Bray</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="joucomatic.html">
+                  <img
+                    src="images/brands/Nov.png"
+                    alt="NOV"
+                    class="product-img"
+                  />
+                  <h3>NOV</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="emerson.html">
+                  <img
+                    src="images/brands/AGCO-Logo.png"
+                    alt="Agco"
+                    class="product-img"
+                  />
+                  <h3>Agco</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/honeywell.png"
+                    alt="Honeywell"
+                    class="product-img"
+                  />
+                  <h3>Honeywell</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/delta-mobrey-2.png"
+                    alt="Delta Mobrey"
+                    class="product-img"
+                  />
+                  <h3>Delta Mobrey</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/Igema-1.png"
+                    alt="Igema"
+                    class="product-img"
+                  />
+                  <h3>Igema</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/SOR-INC.png"
+                    alt="SOR Inc"
+                    class="product-img"
+                  />
+                  <h3>SOR Inc</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/Foxboro.png"
+                    alt="Foxboro"
+                    class="product-img"
+                  />
+                  <h3>Foxboro</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/Ascon_Tecnologic.png"
+                    alt="Ascon Technologies"
+                    class="product-img"
+                  />
+                  <h3>Ascon Technologies</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/air-dimensions.png"
+                    alt="Air Dimension"
+                    class="product-img"
+                  />
+                  <h3>Air Dimension</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/Schroedahl.png"
+                    alt="Schroedahl"
+                    class="product-img"
+                  />
+                  <h3>Schroedahl</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/cla-val-logo-new.png"
+                    alt="CLA-VAL"
+                    class="product-img"
+                  />
+                  <h3>CLA-VAL</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/questtech.png"
+                    alt="Quest-Tec"
+                    class="product-img"
+                  />
+                  <h3>Quest-Tec</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/straval.png"
+                    alt="Straval"
+                    class="product-img"
+                  />
+                  <h3>Straval</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/Flowserve.png"
+                    alt="Flowserve"
+                    class="product-img"
+                  />
+                  <h3>Flowserve</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/Daniel-Logo2x.png"
+                    alt="Daniel"
+                    class="product-img"
+                  />
+                  <h3>Daniel</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/magnetrol.png"
+                    alt="Magnetrol"
+                    class="product-img"
+                  />
+                  <h3>Magnetrol</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/Hydratech-Logo.png"
+                    alt="Hydratech"
+                    class="product-img"
+                  />
+                  <h3>Hydratech</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/rosemount.png"
+                    alt="Rosemount"
+                    class="product-img"
+                  />
+                  <h3>Rosemount</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/Bifold.png"
+                    alt="Bifold"
+                    class="product-img"
+                  />
+                  <h3>Bifold</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/US-Motors.png"
+                    alt="US Motors"
+                    class="product-img"
+                  />
+                  <h3>US Motors</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/ARCA.png"
+                    alt="Arca"
+                    class="product-img"
+                  />
+                  <h3>Arca</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/Air-Liquide-logo.png"
+                    alt="Air Liquide"
+                    class="product-img"
+                  />
+                  <h3>Air Liquide</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/Halliburton.png"
+                    alt="Halliburton"
+                    class="product-img"
+                  />
+                  <h3>Halliburton</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/carraro.png"
+                    alt="Carraro"
+                    class="product-img"
+                  />
+                  <h3>Carraro</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/ingersollrand.png"
+                    alt="Insgersoll Rand"
+                    class="product-img"
+                  />
+                  <h3>Insgersoll Rand</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/milton-roy.png"
+                    alt="Milton Roy"
+                    class="product-img"
+                  />
+                  <h3>Milton Roy</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/ABB.png"
+                    alt="ABB Totalflow"
+                    class="product-img"
+                  />
+                  <h3>ABB Totalflow</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/Yarway.png"
+                    alt="Yarway"
+                    class="product-img"
+                  />
+                  <h3>Yarway</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/cemp.png"
+                    alt="Cemp Motor"
+                    class="product-img"
+                  />
+                  <h3>Cemp Motor</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/elnor.png"
+                    alt="Elnor Motor"
+                    class="product-img"
+                  />
+                  <h3>Elnor Motor</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/XOMOX.png"
+                    alt="XOMOX Aiv"
+                    class="product-img"
+                  />
+                  <h3>XOMOX Aiv</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item">
+                <a href="sirai.html">
+                  <img
+                    src="images/brands/toshiba.png"
+                    alt="Toshiba"
+                    class="product-img"
+                  />
+                  <h3>Toshiba</h3>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="header_bottom">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <!-- <div class="navbar-brand" href="index.html"> NATS </div> -->
-            <a class="navbar-brand" href="index.html">
-              <img src="images/nats-logo.png" alt="NATS Logo" style="height: 50px;">
-            </a>
+    </section>
 
-            <!-- Hamburger icon -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
-            </button>
+    <!-- product section ends -->
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html">Products</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="team.html"> Team </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-              </ul>
+    <!-- info section -->
+    <section class="info_section">
+      <div class="container">
+        <div class="info_top">
+          <!-- deleted -->
+        </div>
+        <div class="info_bottom">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <a class="navbar-brand" href="index.html">
+                <img
+                  src="images/nats-logo-test.png"
+                  alt="NATS Logo"
+                  style="height: 50px"
+                />
+              </a>
             </div>
-          </nav>
+            <div class="col-lg-3 col-md-6">
+              <div class="info_detail">
+                <h5>Company</h5>
+                <p>
+                  Welcome to North American Trade Source (NATS), a premier Oil &
+                  Gas trade company based in the United States.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="info_detail">
+                <h5>Services</h5>
+                <p>
+                  At North American Trade Source (NATS), we offer a
+                  comprehensive suite of services designed to meet the diverse
+                  needs of the Oil & Gas industry.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <div class="">
+                <h5>Useful links</h5>
+                <ul class="info_menu">
+                  <li>
+                    <a href="index.html"> Home </a>
+                  </li>
+                  <li>
+                    <a href="about.html"> About </a>
+                  </li>
+                  <li>
+                    <a href="service.html"> Services </a>
+                  </li>
+                  <li>
+                    <a href="team.html"> Team </a>
+                  </li>
+                  <li class="mb-0">
+                    <a href="contact.html"> Contact Us </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
-    <!-- end header section -->
+    </section>
 
-  </div>
+    <!-- end info_section -->
 
-  <!-- product section -->
-
-  <section class="service_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2 class="">
-          Our Brands
-        </h2>
-        <p class="col-lg-8 px-0">
-          Select from our major brands to explore products
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://html.design/">NATS</a>
         </p>
       </div>
-      <div class="service_container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="brands/masoneilan.html">
-                <img src="images/brands/masoneilan-alone.png" alt="Masoneilan" class="product-img">
-                <h3>Masoneilan</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="numatics.html">
-                <img src="images/brands/Fisher.png" alt="Fisher" class="product-img">
-                <h3>Fisher</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="cosmic.html">
-                <img src="images/brands/Bettis.png" alt="Bettis" class="product-img">
-                <h3>Bettis</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="enidine.html">
-                <img src="images/brands/Bray.png" alt="Bray" class="product-img">
-                <h3>Bray</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="joucomatic.html">
-                <img src="images/brands/Nov.png" alt="NOV" class="product-img">
-                <h3>NOV</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="emerson.html">
-                <img src="images/brands/AGCO-Logo.png" alt="Agco" class="product-img">
-                <h3>Agco</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/honeywell.png" alt="Honeywell" class="product-img">
-                <h3>Honeywell</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/delta-mobrey-2.png" alt="Delta Mobrey" class="product-img">
-                <h3>Delta Mobrey</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/Igema-1.png" alt="Igema" class="product-img">
-                <h3>Igema</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/SOR-INC.png" alt="SOR Inc" class="product-img">
-                <h3>SOR Inc</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/Foxboro.png" alt="Foxboro" class="product-img">
-                <h3>Foxboro</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/Ascon_Tecnologic.png" alt="Ascon Technologies" class="product-img">
-                <h3>Ascon Technologies</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/air-dimensions.png" alt="Air Dimension" class="product-img">
-                <h3>Air Dimension</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/Schroedahl.png" alt="Schroedahl" class="product-img">
-                <h3>Schroedahl</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/cla-val-logo-new.png" alt="CLA-VAL" class="product-img">
-                <h3>CLA-VAL</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/questtech.png" alt="Quest-Tec" class="product-img">
-                <h3>Quest-Tec</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/straval.png" alt="Straval" class="product-img">
-                <h3>Straval</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/Flowserve.png" alt="Flowserve" class="product-img">
-                <h3>Flowserve</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/Daniel-Logo2x.png" alt="Daniel" class="product-img">
-                <h3>Daniel</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/magnetrol.png" alt="Magnetrol" class="product-img">
-                <h3>Magnetrol</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/Hydratech-Logo.png" alt="Hydratech" class="product-img">
-                <h3>Hydratech</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/rosemount.png" alt="Rosemount" class="product-img">
-                <h3>Rosemount</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/Bifold.png" alt="Bifold" class="product-img">
-                <h3>Bifold</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/US-Motors.png" alt="US Motors" class="product-img">
-                <h3>US Motors</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/ARCA.png" alt="Arca" class="product-img">
-                <h3>Arca</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/Air-Liquide-logo.png" alt="Air Liquide" class="product-img">
-                <h3>Air Liquide</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/Halliburton.png" alt="Halliburton" class="product-img">
-                <h3>Halliburton</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/carraro.png" alt="Carraro" class="product-img">
-                <h3>Carraro</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/ingersollrand.png" alt="Insgersoll Rand" class="product-img">
-                <h3>Insgersoll Rand</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/milton-roy.png" alt="Milton Roy" class="product-img">
-                <h3>Milton Roy</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/ABB.png" alt="ABB Totalflow" class="product-img">
-                <h3>ABB Totalflow</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/Yarway.png" alt="Yarway" class="product-img">
-                <h3>Yarway</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/cemp.png" alt="Cemp Motor" class="product-img">
-                <h3>Cemp Motor</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/elnor.png" alt="Elnor Motor" class="product-img">
-                <h3>Elnor Motor</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/XOMOX.png" alt="XOMOX Aiv" class="product-img">
-                <h3>XOMOX Aiv</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="sirai.html">
-                <img src="images/brands/toshiba.png" alt="Toshiba" class="product-img">
-                <h3>Toshiba</h3>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </footer>
+    <!-- footer section -->
 
-  <!-- product section ends -->
-
-  <!-- info section -->
-  <section class="info_section ">
-    <div class="container">
-      <div class="info_top">
-        <!-- deleted -->
-      </div>
-      <div class="info_bottom">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <a class="navbar-brand" href="index.html">
-              <img src="images/nats-logo-test.png" alt="NATS Logo" style="height: 50px;">
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="info_detail">
-              <h5>
-                Company
-              </h5>
-              <p>
-                Welcome to North American Trade Source (NATS), a premier Oil & Gas trade company based in the United States.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="info_detail">
-              <h5>
-                Services
-              </h5>
-              <p>
-                At North American Trade Source (NATS), we offer a comprehensive suite of services designed to meet the diverse needs of the Oil & Gas industry.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="">
-              <h5>
-                Useful links
-              </h5>
-              <ul class="info_menu">
-                <li>
-                  <a href="index.html">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="about.html">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="service.html">
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a href="team.html">
-                    Team
-                  </a>
-                </li>
-                <li class="mb-0">
-                  <a href="contact.html">
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end info_section -->
-
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">NATS</a>
-      </p>
-    </div>
-  </footer>
-  <!-- footer section -->
-
-  <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <!-- nice select -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
-  <!-- custom js -->
-  <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-  <!-- End Google Map -->
-</body>
-
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- nice select -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+      integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
+  </body>
 </html>
