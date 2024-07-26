@@ -92,12 +92,12 @@ body {
   left: 0;
   width: 100%;
   text-align: center;
-  font-size: 16px;
+  font-size: 15.5px;
   /* font-weight: bold; */
   padding: 5px 0; /* Padding to give some space around the text */
   color: #333; /* Text color */
   z-index: 2; /* Ensure text is above the image */
-
+  margin-bottom: 20px;
 }
 
 .portfolio #portfolio-flters {
@@ -141,6 +141,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* padding-top: 50px; */
 }
 
 .portfolio .portfolio-wrap img {
