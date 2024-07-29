@@ -60,7 +60,7 @@ body {
 
 .product-img {
   max-width: 200px; /* Ensure the image doesn't exceed the container width */
-  max-height: 100px; /* Ensure the image doesn't exceed the container height */
+  max-height: 90px; /* Ensure the image doesn't exceed the container height */
   display: block;
   margin: 0 auto; /* Center the image horizontally */
 }
