@@ -1091,6 +1091,10 @@ a:focus {
   background: #2c7873;
 }
 
+/*--------------------------------------------------------------
+# About Us Section
+--------------------------------------------------------------*/
+
 .about_section .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1110,6 +1114,7 @@ a:focus {
 .about_section .detail-box p {
   color: #1f1f1f;
   margin-top: 15px;
+  text-align: justify;
 }
 
 .about_section .detail-box a {
@@ -1128,6 +1133,10 @@ a:focus {
   background-color: transparent;
   color: #2c7873;
 }
+
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
 
 .team_section .box {
   display: -webkit-box;
