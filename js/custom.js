@@ -83,6 +83,21 @@ $(document).ready(function () {
 });
 
 
+document.getElementById('brandSearch').addEventListener('input', function() {
+  var filter = this.value.toLowerCase();
+  var items = document.querySelectorAll('.product-item');
+
+  items.forEach(function(item) {
+    var brandName = item.querySelector('img').getAttribute('alt').toLowerCase();
+    if (brandName.includes(filter)) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize AOS
   AOS.init();

@@ -94,7 +94,7 @@ body {
 
 .alphabet-filter {
   text-align: center;
-  margin-bottom: 20px; /* Add space after filters*/
+  margin-bottom: 30px; /* Add space after filters*/
 }
 .alphabet-filter a {
   margin: 0 5px;
@@ -103,6 +103,37 @@ body {
 }
 .alphabet-filter a:hover {
   text-decoration: underline;
+}
+
+/* -------------------- Search Bar ------------------------ */
+
+.search-bar {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#brandSearch {
+  width: 55%;
+  max-width: 350px; /* Limit the maximum width */
+  padding: 12px 20px; /* Add padding for a more substantial look */
+  border: 1px solid #007BFF; /* Blue border */
+  border-radius: 30px; /* More rounded corners */
+  font-size: 16px;
+  outline: none; /* Remove default outline */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+}
+
+#brandSearch:focus {
+  border-color: #0056b3; /* Darker blue when focused */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on focus */
+}
+
+/* Placeholder text style */
+#brandSearch::placeholder {
+  color: #999; /* Lighter color for placeholder text */
+  opacity: 1; /* Ensure full opacity on placeholder */
+  font-style: italic; /* Italicize the placeholder text */
 }
 
 /*--------------------------------------------------------------
@@ -958,7 +989,7 @@ a:focus {
 }
 
 .service_section .heading_container {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .service_section .box {
