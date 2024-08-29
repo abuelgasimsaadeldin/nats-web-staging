@@ -394,21 +394,21 @@ body {
 --------------------------------------------------------------*/
 
 .custom-container {
-  padding-left: 50px; /* Adjust the value as needed */
+  padding-left: 50px; 
 }
 
 .contact_section {
-  padding-top: 35px !important; /* Use !important to ensure this style is applied */
-  margin-top: 35px !important; /* Ensure no margin is added on top */
+  padding-top: 35px !important; 
+  margin-top: 35px !important; 
 }
 
 .contact_section .left-column {
-  padding-top: 25px !important; /* Adjust the value as needed */
-  margin-top: 0 !important; /* Ensure no extra margin is added */
+  padding-top: 25px !important; 
+  margin-top: 0 !important; 
 }
 
 .contact_section .form_container {
-  margin-top: 0; /* Ensure there's no extra margin */
+  margin-top: 0; 
 }
 
 .contact_section .info-box {
@@ -456,13 +456,13 @@ body {
 
 .heading_container.heading_center h2 {
   text-align: center;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
+  font-size: 40px;
 }
 
-/* Responsive styling for mobile view */
 @media (max-width: 768px) {
   .custom-container {
-    padding-left: 10px; /* Adjust padding-left for mobile view */
+    padding-left: 10px;
   }
   
   .contact_section .row {
@@ -473,16 +473,16 @@ body {
 
   .contact_section .left-column, 
   .contact_section .form_container {
-    width: 100%; /* Ensure full width for columns on mobile */
-    padding: 20px; /* Add some padding for better spacing */
+    width: 100%;
+    padding: 20px;
   }
 
   .contact_section .info-box {
-    padding: 20px; /* Adjust padding for mobile */
+    padding: 20px;
   }
 
   .contact_section .form_container .btn_box button {
-    width: auto; /* Ensure button doesn't stretch too much on mobile */
+    width: auto;
   }
 }
 
@@ -558,6 +558,7 @@ body {
 .heading_container h2 {
   position: relative;
   font-weight: bold;
+  font-size: 40px;
 }
 
 .heading_container h2 span {
@@ -901,15 +902,29 @@ a:focus {
   position: unset;
 }
 
+.slider_section .carousel-inner {
+  height: 200px; /* ADJUST THIS NUMBER FOR DESIRED HEIGHT!! */
+  overflow: hidden; /* Prevents content from overflowing */
+}
+
+.slider_section .carousel-item {
+  height: 100%;
+}
+
 .slider_section .detail-box {
   color: #ffffff;
-  text-align: center;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Ensure content is centered vertically */
 }
 
 .slider_section .detail-box h1 {
   font-weight: 600;
   margin-bottom: 15px;
   color: #ffffff;
+  text-align: center;
 }
 
 .slider_section .detail-box .btn-box {
@@ -988,8 +1003,23 @@ a:focus {
   right: 25px;
 }
 
+/* ------------------------------------------------------------ */
+
+@media (max-width: 767px) {
+  .slider_section .carousel-inner {
+    height: 400px; /* Set this to your desired height for mobile view */
+  }
+
+  /* .slider_section .detail-box p {
+    text-align: justify;
+  } */
+}
+
+/* ------------------------------------------------------------ */
+
 .service_section .heading_container {
   margin-bottom: 10px;
+  text-align: justify;
 }
 
 .service_section .box {
@@ -1165,6 +1195,29 @@ a:focus {
   color: #2c7873;
 }
 
+@media (max-width: 767px) {
+  .about_section .detail-box {
+    text-align: center;
+  }
+  
+  .about_section .heading_container {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about_section .heading_container h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about_section .detail-box a {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
@@ -1181,6 +1234,10 @@ a:focus {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 45px;
+}
+
+.team_section .heading_container {
+  text-align: justify;
 }
 
 .team_section .box .img-box {
