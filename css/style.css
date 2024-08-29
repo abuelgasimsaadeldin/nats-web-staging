@@ -1156,7 +1156,7 @@ a:focus {
 # About Us Section
 --------------------------------------------------------------*/
 
-.about_section .row {
+/* .about_section .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1176,6 +1176,11 @@ a:focus {
   color: #1f1f1f;
   margin-top: 15px;
   text-align: justify;
+} */
+
+.about_section .heading_container.about-homepage h2 {
+  font-size: 40px;
+  color: #000000;
 }
 
 .about_section .detail-box a {
@@ -1196,25 +1201,109 @@ a:focus {
 }
 
 @media (max-width: 767px) {
-  .about_section .detail-box {
+  /* .about_section .detail-box {
     text-align: center;
-  }
+  } */
   
-  .about_section .heading_container {
+  .about_section .heading_container.about-homepage {
     align-items: center;
     text-align: center;
   }
   
-  .about_section .heading_container h2 {
+  .about_section .heading_container.about-homepage h2 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .about_section .detail-box a {
+  /* .about_section .detail-box a {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+  } */
+}
+
+/*--------------------------------------------------------------*/
+
+.about_section .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px; /* Added margin to separate rows */
+}
+
+.about_section .img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.about_section .img-box img.intro-img {
+  width: 500px;
+  height: 500px;
+}
+
+.about_section .img-box img.about-img {
+  width: 100%;
+  height: 700px;
+}
+
+.about_section .img-box img {
+  width: 100%;
+  height: auto;
+}
+
+.about_section .detail-box {
+  padding: 20px;
+}
+
+.about_section .heading_container {
+  margin-bottom: 15px;
+}
+
+.about_section .heading_container h2 {
+  font-size: 35px;
+  color: #2c7873;
+}
+
+.about_section .heading_container.intro-heading {
+  text-align: center;
+  width: 100%;
+}
+
+.about_section .heading_container.intro-heading h2 {
+  font-size: 35px;
+  color: #2c7873;
+  margin: 0;
+  text-align: center;
+}
+
+.about_section .detail_p_mt {
+  color: #1f1f1f;
+  text-align: justify;
+  line-height: 1.6; /* Improved readability */
+}
+
+@media (max-width: 767px) {
+  .about_section .row {
+    flex-direction: column;
+  }
+
+  .about_section .detail-box {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .about_section .heading_container {
+    text-align: center;
+  }
+
+  .about_section .heading_container h2 {
+    font-size: 30px;
+  }
+
+  .about_section .img-box img.about-img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
   }
 }
 
