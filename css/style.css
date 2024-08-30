@@ -1717,7 +1717,7 @@ a:focus {
 
   .service_list {
     text-align: left; /* Ensure the text within list items is left-aligned */
-    padding-left: 85px; /* Remove left padding to adjust alignment */
+    padding-left: 55px; /* Remove left padding to adjust alignment */
     margin: 0; /* Remove default margin */
   }
 
