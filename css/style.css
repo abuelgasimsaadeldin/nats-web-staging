@@ -1667,7 +1667,55 @@ a:focus {
   margin: 0;
 }
 
+.info_detail p {
+  text-align: justify;
+}
+
+.company-section {
+  max-width: 340px;
+  margin-left: -45px;
+}
+
+.service-section {
+  max-width: 330px;
+  margin-left: 35px;
+}
+
 .footer_section p a {
   color: inherit;
+}
+
+.service_list {
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 20px; /* Adds some left padding to align the bullet points */
+  line-height: 1.6; /* Adjusts the spacing between lines for readability */
+}
+
+.service_list li {
+  margin-bottom: 7px; /* Adds space between each list item */
+  font-size: 16px; /* Sets a readable font size */
+  color: #ffffff; /* Sets a color for the list items */
+}
+
+@media (max-width: 767px) {
+  .company-section {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Center the text */
+    padding: 0 25px;
+  }
+
+  .service-section {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Center the text */
+  }
+
+  .service_list {
+    list-style-type: none; /* Removes bullet points */
+    padding-left: 0; /* Removes left padding */
+  }
 }
 /*# sourceMappingURL=style.css.map */
