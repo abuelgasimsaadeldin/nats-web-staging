@@ -1697,6 +1697,7 @@ a:focus {
   color: #ffffff; /* Sets a color for the list items */
 }
 
+/* Mobile view adjustments */
 @media (max-width: 767px) {
   .company-section {
     max-width: 100%;
@@ -1707,22 +1708,32 @@ a:focus {
   }
 
   .service-section {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; /* Center the text */
+    max-width: 100%; /* Ensure it fits within the screen width */
+    margin-left: auto; /* Center the section horizontally */
+    margin-right: auto; /* Center the section horizontally */
+    padding: 0 25px;
+    text-align: left; /* Keep the text left-aligned */
   }
 
   .service_list {
-    list-style-type: none; /* Removes bullet points */
-    padding-left: 0; /* Removes left padding */
+    text-align: left; /* Ensure the text within list items is left-aligned */
+    padding-left: 85px; /* Remove left padding to adjust alignment */
+    margin: 0; /* Remove default margin */
+  }
+
+  .service_list li {
+    margin-bottom: 10px; /* Increase space between items if needed */
+    font-size: 16px; /* Ensure readability */
+    color: #ffffff; /* Maintain color */
   }
 }
 
-/* "Desktop view" on mobile */
+/* For devices larger than mobile but smaller than desktop */
 @media (max-width: 992px) {
   .service-section {
-    margin-left: 0; /* Remove the left margin for smaller screens */
+    margin-left: auto; /* Center the section horizontally */
+    margin-right: auto; /* Center the section horizontally */
+    max-width: 100%; /* Ensure it doesn’t exceed the screen width */
   }
 }
 /*# sourceMappingURL=style.css.map */
