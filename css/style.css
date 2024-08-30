@@ -1718,4 +1718,11 @@ a:focus {
     padding-left: 0; /* Removes left padding */
   }
 }
+
+/* "Desktop view" on mobile */
+@media (max-width: 992px) {
+  .service-section {
+    margin-left: 0; /* Remove the left margin for smaller screens */
+  }
+}
 /*# sourceMappingURL=style.css.map */
