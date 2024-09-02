@@ -768,7 +768,7 @@ a:focus {
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 16px;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
