@@ -267,6 +267,66 @@ body {
   bottom: 0;
 }
 
+/*--------------------------------------------------------------
+# Portfolio (Products list)
+--------------------------------------------------------------*/
+
+/* Product list styling */
+.product-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.product-list li {
+  font-size: 1.2em;
+  padding: 12px 0;
+  position: relative;
+  padding-left: 30px;
+}
+
+.product-list li:before {
+  content: "●"; /* You can replace this with any symbol or custom icon */
+  font-size: 1em; /* Adjust bullet size */
+  color: #000000; /* Customize the bullet color */
+  position: absolute;
+  left: 0; /* Position it relative to the text */
+  top: 0;
+  transform: translateY(35%); /* Centers the bullet vertically with the text */
+}
+
+.product-list li:hover:before {
+  color: #0056b3; /* Bullet color changes on hover */
+}
+
+.product-list li:hover {
+  color: #0056b3; /* Slight color change on hover */
+  cursor: pointer;
+}
+
+/* Container and spacing */
+.portfolio-container {
+  margin-top: 20px;
+}
+
+.portfolio-item {
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.heading_center h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #333;
+}
+
+.heading_container p {
+  color: #666;
+  font-size: 1.2em;
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio Details (Specific product details)
