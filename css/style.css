@@ -209,7 +209,7 @@ body {
   border: 1px solid #ccc; /* Add border here */
   border-radius: 5px; /* Optional: add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
-  padding-top: 30px; /* Space for the title */
+  padding-top: 60px; /* Space for the title */
 }
 
 .portfolio .portfolio-wrap::before {
