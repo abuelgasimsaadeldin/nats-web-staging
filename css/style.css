@@ -1082,6 +1082,13 @@ a:focus {
   text-align: justify;
 }
 
+.service_section .px-0 {
+  color: #1f1f1f; /* Match the color used in .detail_p_mt */
+  text-align: justify; /* Match the alignment */
+  line-height: 1.6; /* Match the line height */
+  font-size: 16px;
+}
+
 .service_section .box {
   margin: 10px;
   text-align: center;
@@ -1210,6 +1217,13 @@ a:focus {
 
 .service_section .owl-dots .owl-dot.active {
   background: #2c7873;
+}
+
+@media (max-width: 767px) {
+  .service_section .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 /*--------------------------------------------------------------
